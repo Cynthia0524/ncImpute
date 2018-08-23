@@ -1,0 +1,7 @@
+useDynLib(ncImpute)
+import(Matrix,svd)
+
+export(ncImpute,ncimpute.svd,ncimputeI.svd,ncimputeI.als,svd.als,Ssvd.als,biScale,impute,complete,Incomplete,splr,lambda0,Eigen.Threshold,concave.penalty,Test.Error,Training.Error,Round.Ratings,RMSE,ncImpute.x.matrix,ncImpute.x.Incomplete)
+#exportPattern("*")
+exportClasses(SparseplusLowRank,Incomplete)
+exportMethods("%*%",as.matrix,dim,norm,rowMeans,rowSums,colMeans,colSums,coerce)
